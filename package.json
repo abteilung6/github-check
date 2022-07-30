@@ -1,7 +1,8 @@
 {
   "name": "github-check",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "homepage": "http://abteilung6.github.io/github-check",
   "dependencies": {
     "@nivo/core": "^0.79.0",
     "@nivo/line": "^0.79.1",
@@ -23,7 +24,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -46,6 +49,7 @@
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.2",
     "autoprefixer": "^10.4.8",
+    "gh-pages": "^4.0.0",
     "postcss": "^8.4.14",
     "tailwindcss": "^3.1.7"
   }
